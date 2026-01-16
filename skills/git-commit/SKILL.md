@@ -1,6 +1,6 @@
 ---
 name: git-commit
-description: Guide for writing effective Git commit messages following Conventional Commits specification. Use when committing code changes, writing commit messages, or ensuring consistent commit history.
+description: Guide for Git commit messages and pushing code. Use when user says "commit", "push code", "push to git", "save changes to git", "git add and commit", "commit and push", or needs help writing commit messages following Conventional Commits.
 ---
 
 # Git Commit Messages
@@ -9,11 +9,16 @@ This skill provides guidance for writing clear, consistent commit messages follo
 
 ## When to Use This Skill
 
+Use this skill when user requests any of these (in any language):
+- "commit", "push code", "push to git", "commit và push"
+- "save changes to git", "lưu code lên git"
+- "git add and commit", "commit changes"
 - Writing commit messages for any code changes
 - Ensuring commit history is clean and readable
 - Following team/project commit conventions
 - Generating changelogs automatically
 - **Ensuring documentation is up-to-date with code changes**
+
 
 ## Pre-commit Checklist
 
