@@ -36,12 +36,15 @@ Before committing, ask yourself:
 ## Commit Message Format
 
 ```
-<type>(<scope>): <subject>
+(emoji)<type>(<scope>): <subject>
 
 [optional body]
 
 [optional footer(s)]
 ```
+
+> [!NOTE]
+> **Emoji is required** for all commit messages. See the emoji mapping below.
 
 ### Components
 
@@ -68,27 +71,22 @@ Before committing, ask yourself:
 | `ci` | 👷 CI configuration | `ci: add GitHub Actions` |
 | `chore` | ♻️ Other maintenance | `chore: update .gitignore` |
 
-## Optional: Emoji Prefix Format
+## Emoji Prefix Format (Required)
 
-You can optionally prefix commit messages with emojis for better visual scanning:
+All commit messages **must** be prefixed with emojis for better visual scanning and commit categorization:
 
 ```
-<icon> <type>(<scope>): <subject>
+(emoji)<type>(<scope>): <subject>
 ```
 
 ### Format Examples
 
 ```bash
-# With emoji prefix
 🐛 fix(api): handle null response
 ✨ feat(auth): add OAuth login
 📚 docs: update installation guide
 🔧 refactor(utils): simplify validation logic
 🚀 perf(query): optimize database queries
-
-# Standard format (also valid)
-fix(api): handle null response
-feat(auth): add OAuth login
 ```
 
 ### Type to Emoji Mapping
@@ -110,26 +108,27 @@ feat(auth): add OAuth login
 | `security` | 🔒 | `:lock:` |
 | `wip` | 🚧 | `:construction:` |
 
-> [!TIP]
-> Using emojis is **optional** and depends on team preference. Both formats are valid. The emoji helps quickly identify commit types when scanning git log.
+> [!IMPORTANT]
+> Using emojis is **required** for all commit messages. This ensures consistent commit history and makes it easier to scan and categorize changes in the git log.
 
 ## Subject Line Rules
 
-1. **Use imperative mood**: "add" not "added" or "adds"
-2. **No capitalization**: start lowercase
-3. **No period at the end**
-4. **Max 50 characters** (hard limit: 72)
-5. **Be specific**: what changed, not why
+1. **Must start with emoji**: See required emoji mapping below
+2. **Use imperative mood**: "add" not "added" or "adds"
+3. **No capitalization**: start lowercase
+4. **No period at the end**
+5. **Max 50 characters** (hard limit: 72)
+6. **Be specific**: what changed, not why
 
 ```diff
 - feat: Updated the login page
-+ feat(auth): add password reset form
++ ✨ feat(auth): add password reset form
 
 - fix: bug fix
-+ fix(cart): prevent duplicate items
++ 🐛 fix(cart): prevent duplicate items
 
-- ✨ added new feature
-+ feat(dashboard): add real-time notifications
+- added new feature
++ ✨ feat(dashboard): add real-time notifications
 ```
 
 ## Body Guidelines
@@ -140,7 +139,7 @@ feat(auth): add OAuth login
 - Use bullet points for multiple changes
 
 ```
-feat(auth): add two-factor authentication
+✨ feat(auth): add two-factor authentication
 
 - Add TOTP-based 2FA using authenticator apps
 - Store encrypted backup codes in database
@@ -155,7 +154,7 @@ who require MFA compliance.
 ### Breaking Changes
 
 ```
-feat(api): change response format
+✨ feat(api)!: change response format
 
 BREAKING CHANGE: API now returns data in envelope format.
 Clients must update to extract data from `response.data`.
@@ -164,7 +163,7 @@ Clients must update to extract data from `response.data`.
 ### Issue References
 
 ```
-fix(login): handle expired tokens
+🐛 fix(login): handle expired tokens
 
 Closes #123
 Fixes #456
@@ -192,19 +191,19 @@ What type of change?
 ### Feature
 
 ```bash
-git commit -m "feat(checkout): add Apple Pay support"
+git commit -m "✨ feat(checkout): add Apple Pay support"
 ```
 
 ### Bug Fix
 
 ```bash
-git commit -m "fix(auth): prevent session timeout on active users"
+git commit -m "🐛 fix(auth): prevent session timeout on active users"
 ```
 
 ### With Body
 
 ```bash
-git commit -m "refactor(api): migrate to async/await
+git commit -m "🔧 refactor(api): migrate to async/await
 
 Replace callback-based API calls with async/await pattern.
 This improves readability and error handling.
@@ -215,7 +214,7 @@ Refs #234"
 ### Breaking Change
 
 ```bash
-git commit -m "feat(api)!: change authentication to JWT
+git commit -m "✨ feat(api)!: change authentication to JWT
 
 BREAKING CHANGE: Session-based auth is no longer supported.
 All clients must use Bearer tokens."
