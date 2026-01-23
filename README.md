@@ -5,13 +5,13 @@ CLI tool to install Agent Skills for AI coding assistants.
 ## Installation
 
 ```bash
-npx create-agent-skills
+npx create-agent-skills@latest
 ```
 
 Or install globally:
 
 ```bash
-npm install -g create-agent-skills
+npm install -g create-agent-skills@latest
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm install -g create-agent-skills
 Run the CLI and follow the interactive prompts:
 
 ```bash
-npx create-agent-skills
+npx create-agent-skills@latest
 ```
 
 ### Options
@@ -45,10 +45,12 @@ npx create-agent-skills
 | `git-pr` | Creates well-structured pull requests |
 | `git-review` | Reviews PRs for code quality and best practices |
 | `maestro-testing` | Write E2E tests for mobile/web apps using Maestro |
+| `remotion` | Create videos programmatically in React |
 | `rust-backend` | Build backend services with Rust and Clean Architecture |
 | `tailwindcss-v4` | Tailwind CSS v4 setup and migration guide |
 | `tauri-v2` | Build desktop apps with Tauri v2 + React |
 | `testing` | Helps write unit, integration, and E2E tests |
+| `threejs` | Complete Three.js development guide |
 
 ## Creating New Skills
 
