@@ -1,6 +1,6 @@
 {
   "name": "create-agent-skills",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "CLI tool to install Agent Skills for AI coding assistants",
   "main": "lib/index.js",
   "bin": {

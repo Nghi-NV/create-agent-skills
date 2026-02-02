@@ -35,6 +35,8 @@ This skill provides guidance for building professional cross-platform desktop ap
 npm create tauri-app@latest my-app -- --template react-ts
 cd my-app
 
+npm create tauri-app@latest my-app -- --template react-ts --identifier com.lumi.lumiiot --manager yarn --force true
+
 # Install frontend dependencies
 npm install zustand react-router-dom
 npm install tailwindcss @tailwindcss/vite -D

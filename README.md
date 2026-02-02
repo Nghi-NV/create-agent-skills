@@ -40,11 +40,13 @@ npx create-agent-skills@latest
 |-------|-------------|
 | `code-review` | Reviews code for bugs, style, and security issues |
 | `create-agent-skill` | Helps create new skills following guidelines |
-| `documentation` | Creates clear READMEs, API docs, and comments |
+| `flutter-clean-arch` | Flutter Clean Architecture using BLoC, Dio, and GetIt |
 | `git-commit` | Writes conventional commit messages |
 | `git-pr` | Creates well-structured pull requests |
 | `git-review` | Reviews PRs for code quality and best practices |
-| `maestro-testing` | Write E2E tests for mobile/web apps using Maestro |
+| `landing-page-slider` | Landing pages with integrated slider for presentations |
+| `lumi-tester` | Guide for extending the Lumi Tester framework |
+| `project-documentation` | Generates comprehensive documentation for existing projects |
 | `remotion` | Create videos programmatically in React |
 | `rust-backend` | Build backend services with Rust and Clean Architecture |
 | `tailwindcss-v4` | Tailwind CSS v4 setup and migration guide |
