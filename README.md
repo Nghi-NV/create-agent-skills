@@ -38,6 +38,7 @@ npx create-agent-skills@latest
 
 | Skill | Description |
 |-------|-------------|
+| `build-check` | Auto-detect project type and run build/test verification |
 | `code-review` | Reviews code for bugs, style, and security issues |
 | `create-agent-skill` | Helps create new skills following guidelines |
 | `flutter-clean-arch` | Flutter Clean Architecture using BLoC, Dio, and GetIt |
@@ -45,14 +46,22 @@ npx create-agent-skills@latest
 | `git-pr` | Creates well-structured pull requests |
 | `git-review` | Reviews PRs for code quality and best practices |
 | `landing-page-slider` | Landing pages with integrated slider for presentations |
+| `learning-mode` | AI-powered learning with explanations, diagrams, and Q&A |
 | `lumi-tester` | Guide for extending the Lumi Tester framework |
+| `parallel-dev` | Parallel development using Git worktrees |
 | `project-documentation` | Generates comprehensive documentation for existing projects |
+| `project-rules` | Create and maintain living project rules |
+| `prompt-mastery` | Advanced prompting techniques for better AI output |
 | `remotion` | Create videos programmatically in React |
 | `rust-backend` | Build backend services with Rust and Clean Architecture |
+| `safe-commands` | Safety rules for destructive commands (rm, force push, etc.) |
+| `smart-routing` | Auto-select the right skill based on user intent |
 | `tailwindcss-v4` | Tailwind CSS v4 setup and migration guide |
 | `tauri-v2` | Build desktop apps with Tauri v2 + React |
+| `techdebt` | Scan and address technical debt in codebase |
 | `testing` | Helps write unit, integration, and E2E tests |
 | `threejs` | Complete Three.js development guide |
+| `verify-loop` | Automated build/test/lint loop until all pass |
 
 ## Creating New Skills
 
