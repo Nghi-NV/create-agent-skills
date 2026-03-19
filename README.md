@@ -63,6 +63,17 @@ npx create-agent-skills@latest
 | `threejs` | Complete Three.js development guide |
 | `verify-loop` | Automated build/test/lint loop until all pass |
 
+## Available Workflows
+
+Workflows are installed to `.agent/workflows/` (workspace only) and provide structured step-by-step processes.
+
+| Workflow | Slash Command | Description |
+|----------|--------------|-------------|
+| `debug-issue` | `/debug-issue` | Systematic debugging from bug report to verified fix |
+| `new-feature` | `/new-feature` | Full feature development: spec → plan → implement → verify |
+| `plan-review` | `/plan-review` | Create implementation plan and cross-review as staff engineer |
+| `verify-all` | `/verify-all` | Run full verification pipeline (build, lint, test, typecheck) |
+
 ## Creating New Skills
 
 See [SKILL_GUIDELINES.md](./SKILL_GUIDELINES.md) for the complete guide.
